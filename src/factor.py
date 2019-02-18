@@ -6,6 +6,8 @@ class Factor(object):
     def numb(self):
         if self.number % 3 == 0:
             return "pling"
+        elif self.number % 7 == 0:
+            return "plong"
         return str(self.number)
 
     @property
