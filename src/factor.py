@@ -3,7 +3,7 @@ class Factor(object):
         self.number = number
 
     @property
-    def numb(self):
+    def raindrops(self):
         drops = ((3,'Pling'), (5,'Plang'), (7,'Plong'));
 
         list = [s for f, s in drops if self.number % f == 0]
