@@ -11,3 +11,6 @@ class FactorTest(unittest.TestCase):
 
     def test_can_return_pling_if_number_divisible_by_3(self):
         assert Factor(3).numb == "pling"
+
+    def test_can_return_plong_if_number_divisible_by_7(self):
+        assert Factor(28).numb == "plong"
