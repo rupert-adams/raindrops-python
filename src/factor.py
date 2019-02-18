@@ -4,4 +4,4 @@ class Factor(object):
 
     @property
     def numb(self):
-        return self.number
+        return str(self.number)
