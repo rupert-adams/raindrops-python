@@ -4,11 +4,10 @@ class Factor(object):
 
     @property
     def numb(self):
-        if self.number % 3 == 0:
-            return "pling"
-        elif self.number % 7 == 0:
-            return "plong"
-        return str(self.number)
+        drops = ((3,'Pling'), (5,'Plang'), (7,'Plong'));
+
+        list = [s for f, s in drops if self.number % f == 0]
+	return "".join(list) if list else str(self.number)
 
     @property
     def getFactor(self):
