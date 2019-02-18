@@ -4,6 +4,8 @@ class Factor(object):
 
     @property
     def numb(self):
+        if self.number % 3 == 0:
+            return "pling"
         return str(self.number)
 
     @property
